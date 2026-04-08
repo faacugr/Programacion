@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        :root {
+            --color-primary: #ffcc00;
+            --color-dark: #333;
+            --color_light: #f4f4f4;
+           
+        }
+
+        * { 
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body{
+            font-family: Arial, Arial, Helvetica, sans-serif;
+            background-color: var(--color_light);
+            box-sizing: 0;
+        }
+        .main-container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+            }
+
+            .card{ 
+                background-color: rgb(141, 201, 216);
+                border-radius: 10px;
+                padding: 20px;
+                width: 250px;
+                text-align:center;
+
+                .card figure{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                }
+        }
+            .card-img{
+                height:128px;
+                width:128px;
+            }
+
+            .card a{
+                color: #000;
+                text-decoration: none;
+                padding: 4px;
+                border-radius: 5px;
+                background-color: var(--color-primary);
+                margin-top: 50px;
+            }
+
+    </style>
+
+</head>
+<body>
+    <main class="main-container">
+        <div class="card">
+            <h3 class="card-title">MELTAN</h3>
+            <figure>
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/808.png" alt="imagen Meltan" class="card-img">
+                <figcaption class="card-text">Tipo: Acero</figcapiton> 
+              </figure>
+              <br>
+            <a href="https://www.wikidex.net/wiki/Meltan" target="_self">Ver más</a>
+
+        </body>
+        </div>
+    </main>
+    
+</body>
+</html>
