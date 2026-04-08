@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de form flex</title>
+
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+      *{
+      box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .form-container {
+        display:flex;
+        height:100vh;
+       justify-content: center;
+    }
+
+    .login{
+        display: flex;
+        flex-direction: column;
+    }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="form-container">
+        <form action="" class="login">
+            <h1 class="login-title">Iniciar sesion</h1>
+
+            <label for="" class="login-label">Usuario:</label>
+            <input type="text" class ="login-user">
+
+            <label for="" class="login-label">Contraseña:</label>
+            <input type="text" class ="login-password">
+
+             <button type="submit" class="login-button">Entrar</button>
+        </form>
+    </div>
+
+
+</body>
+</html>
