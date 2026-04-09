@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Cards</title>
+    <style>
+
+        :root {
+         --color-primary: #ffcc00;
+         --color-dark: #333; 
+        --color_light: #f4f4f4;
+
+
+        }
+
+        * { 
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--color_light);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .main-container {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            max-width: 900px;
+
+        }
+
+
+
+        .card { 
+            background-color: rgb(141, 201, 216);
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card-title {
+            margin-bottom: 10px;
+            text-transform: uppercase;
+
+        }
+
+        .card figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .card-img {
+            height: 128px;
+            width: 128px;
+            object-fit: contain;
+        }
+
+        .card-text {
+            margin-top: 5px;
+        }
+
+        .card a {
+            display: inline-block;
+            color: #000;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            background-color: var(--color-primary);
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <main class="main-container">
+        <div class="card">
+            <h3 class="card-title">MELTAN</h3>
+            <figure>
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/808.png" alt="Meltan" class="card-img">
+                <figcaption class="card-text">Tipo: Acero</figcaption>
+            </figure>
+            <a href="https://www.wikidex.net/wiki/Meltan" target="_blank">Ver más</a>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title">PIKACHU</h3>
+            <figure>
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Pikachu" class="card-img">
+                <figcaption class="card-text">Tipo: Eléctrico</figcaption>
+            </figure>
+            <a href="https://www.wikidex.net/wiki/Pikachu" target="_blank">Ver más</a>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title">BULBASAUR</h3>
+            <figure>
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Bulbasaur" class="card-img">
+                <figcaption class="card-text">Tipo: Planta</figcaption>
+            </figure>
+            <a href="https://www.wikidex.net/wiki/Bulbasaur" target="_blank">Ver más</a>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title">SQUIRTLE</h3>
+            <figure>
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png" alt="Squirtle" class="card-img">
+                <figcaption class="card-text">Tipo: Agua</figcaption>
+            </figure>
+            <a href="https://www.wikidex.net/wiki/Squirtle" target="_blank">Ver más</a>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title">CHARMANDER</h3>
+            <figure>
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png" alt="Charmander" class="card-img">
+                <figcaption class="card-text">Tipo: Fuego</figcaption>
+            </figure>
+            <a href="https://www.wikidex.net/wiki/Charmander" target="_blank">Ver más</a>
+        </div>
+
+        <div class="card">
+            <h3 class="card-title">MEW</h3>
+            <figure>
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png" alt="Mew" class="card-img">
+                <figcaption class="card-text">Tipo: Psíquico</figcaption>
+            </figure>
+            <a href="https://www.wikidex.net/wiki/Mew" target="_blank">Ver más</a>
+        </div>
+    </main>
+</body>
+</html>
